@@ -1,0 +1,15 @@
+Task 3: Questions on Delegation and Inheritance
+Evaluate your two implementations for the given problem and answer the following questions:
+- Which is more dependent on the implementation details of the SortedIntList, delegation or inheritance?
+-- inheritance, cause the subclass is closely coupled wiht the parent class. If the parent class, SortedIntList, changed any of its logic
+the logic of the inheritance class would change as well.
+
+- If the add method in SortedIntList is significantly modified or its behavior changes, which implementation is more likely to break?
+-- Inheritance, cause it's implementation highly replies on its parent class.
+
+- What issues does using delegation solve that might have been problematic with inheritance?
+-- If the parent class, SortedIntList, breaks, the inheritance would break as well; but delegation would not break.
+
+- Based on the provided implementations, when would it be more appropriate to use inheritance and when to use delegation?
+-- when there is a lot of code that you want to use from the parent class, you'd use inheritance. Otherwise, you will need
+to write a lot of redudent code.
